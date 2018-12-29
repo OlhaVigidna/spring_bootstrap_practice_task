@@ -1,0 +1,35 @@
+.product{
+    height: 230px;
+    width: 18%;
+    border: 5px solid black;
+    text-align: center;
+    background: blueviolet;
+    margin: 3px;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+
+.menu{
+    border: 3px solid black;
+    margin: 3px;
+    width: 20%;
+    background: silver;
+    height: 15%;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+ul{
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}

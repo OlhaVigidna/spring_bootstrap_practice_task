@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="main">
+    <div class="menu">
+        <form action="/showAll" method="get">showAll<input type="submit" value="click"></form>
+    </div>
+
+    <div class="menu">
+        <form action="/showWherePriceHigher1000" method="get">Show Where Price Higher 1000<input type="submit" value="click">
+        </form>
+    </div>
+
+    <div class="menu">
+        <form action="/showWherePriceHigher2000" method="get">Show Where Price Higher 2000<input type="submit" value="click">
+        </form>
+    </div>
+
+    <div class="menu">
+        <form action="/showLast10" method="get">Show all products<input type="submit" value="click"></form>
+    </div>
+
+    <div class="menu">
+        <form action="/showByAlphabet" method="get">Show by Alphabet<input type="submit" value="click"></form>
+    </div>
+
+</div>
+
+
+<ul>
+    <div class="list">
+        <div th:each="prod : ${allProd}" class="product">
+            [[${prod.name}]] [[${prod.price}]] [[${prod.describing}]]
+        </div>
+    </div>
+</ul>
+
+
+<!--<form action="/" method="post">-->
+<!--<input type="submit">-->
+<!--</form>-->
+</body>
+</html>
